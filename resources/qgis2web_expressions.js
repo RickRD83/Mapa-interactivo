@@ -777,3 +777,29 @@ function exp_label_AreasAfectadas_5_eval_expression(context) {
         return ((((('Área: ' + feature.get('Área (m2)') ) + 'm2') + '\n') + 'Riesgo: ') + feature.get('Riesgo') );
     }
 }
+
+
+function exp_label_Linderosdelasareasafectadas_6_eval_expression(context) {
+    // Distance || ' m' || '\n' || Rumbo
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (((feature.get('Distance')  + ' m') + '\n') + feature.get('Rumbo') );
+    } else {
+        return (((feature.get('Distance')  + ' m') + '\n') + feature.get('Rumbo') );
+    }
+}
+
+
+function exp_label_Linderos_8_eval_expression(context) {
+    // Distance || ' m' || '\n' || Rumbo
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (((feature.get('Distance')  + ' m') + '\n') + feature.get('Rumbo') );
+    } else {
+        return (((feature.get('Distance')  + ' m') + '\n') + feature.get('Rumbo') );
+    }
+}

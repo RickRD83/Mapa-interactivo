@@ -9,16 +9,16 @@ var style_Linderosdelasareasafectadas_6 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
+    var labelFont = "13.0px \'Arial Narrow\', sans-serif";
     var labelFill = "#323232";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    var bufferColor = "#fafafa";
+    var bufferWidth = 2.0999999999999996;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'line';
-    if ("" !== null) {
-        labelText = String("");
+    if (exp_label_Linderosdelasareasafectadas_6_eval_expression(context) !== null) {
+        labelText = String(exp_label_Linderosdelasareasafectadas_6_eval_expression(context));
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(133,182,111,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
